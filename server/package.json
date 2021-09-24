@@ -1,6 +1,6 @@
 {
   "scripts": {
-     "start": "json-server cars.json --watch"
+    "start": "json-server cars.json --watch"
   },
   "dependencies": {
     "json-server": "^0.16.3"
