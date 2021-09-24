@@ -2,7 +2,7 @@
   "cars": [
     {
       "id": 1,
-      "title": "Top Deal Of Week!",
+      "title": "Top Deal Of Week! RESERVED",
       "price": "189.455 $",
       "image": "http://localhost:3000/images/car1.png",
       "miles": 11321,
@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "title": "Bargain!",
+      "title": "Bargain! RESERVED",
       "price": "8.700 $",
       "image": "http://localhost:3000/images/car2.png",
       "miles": 113666,
@@ -28,7 +28,7 @@
     },
     {
       "id": 3,
-      "title": "Fair Price",
+      "title": "Fair Price RESERVED RESERVED RESERVED",
       "price": "91.170 $",
       "image": "http://localhost:3000/images/car3.png",
       "miles": 45128,
@@ -41,7 +41,7 @@
     },
     {
       "id": 4,
-      "title": "Fair Price",
+      "title": "Fair Price RESERVED RESERVED RESERVED",
       "price": "12.333 $",
       "image": "http://localhost:3000/images/car4.png",
       "miles": 98301,
@@ -54,7 +54,7 @@
     },
     {
       "id": 5,
-      "title": "Fair Price",
+      "title": "Fair Price RESERVED",
       "price": "182.900 $",
       "image": "http://localhost:3000/images/car5.png",
       "miles": 42771,

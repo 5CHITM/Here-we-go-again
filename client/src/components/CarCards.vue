@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="d-flex flex-wrap mb-6 justify-center" color="grey lighten-2" flat tile>
+    <div class="d-flex flex-wrap mb-6 justify-center align-stretch" color="grey lighten-2" flat tile>
       <div v-for="car in cars" :key="car.id" outlined tile class="ma-3">
-        <carCard :car="car"></carCard>
+        <carCard :car="car" @buycar="buyCar($event)"></carCard>
       </div>
     </div>
   </div>
@@ -14,25 +14,8 @@ import CarCard from '@/components/CarCard.vue';
 export default {
   name: 'CarCards',
 
-  data: () => ({
-    cars: [],
-  }),
-  created() {
-    this.getData();
-  },
+  data: () => ({}),
   methods: {
-    async getData() {
-      try {
-        const { data } = await axios({
-          url: `http://127.0.0.1:3000/cars`,
-          method: 'GET',
-        });
-        this.cars = data;
-      } catch (error) {
-        console.error(error);
-      }
-    },
-
     async buyCar(el) {
       try {
         await axios({
@@ -43,6 +26,7 @@ export default {
             title: `${el.title} RESERVED`,
           },
         });
+        return this.$emit('refresh', true);
       } catch (error) {
         console.error(error);
       }
@@ -50,6 +34,9 @@ export default {
   },
   components: {
     CarCard,
+  },
+  props: {
+    cars: Array,
   },
 };
 </script>
